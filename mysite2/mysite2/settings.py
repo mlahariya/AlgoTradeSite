@@ -13,7 +13,7 @@ print(CONTENT_DIR)
 SECRET_KEY = 'NhfTvayqggTBPswCXXhWaN69HuglgZIkM'
 
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 SITE_ID = 1
 
@@ -28,7 +28,7 @@ INSTALLED_APPS = [
 
     # vendor --- its a package we use to Costomize our website
     "bootstrap4",
-    
+
     # Application apps
     'main',
     'accounts',
@@ -170,4 +170,3 @@ LOCALE_PATHS = [
 # to add images from unsplash or any other website, we need to pull the api url. NOT JUST THE IMG LINK. this has to
 # be copied in the assets (staticfiles_dir) folder, before making the collectstatic call. Otherwise the image will
 # not be downloaded
-
